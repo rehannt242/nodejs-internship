@@ -3,3 +3,35 @@
 20240215	10:29:32	583cced3-3fb8-4918-baf3-439a98e230ae	/img/img1.jpg	GET
 20240215	10:29:32	a32cf61a-98aa-4b7f-936a-49a6f1ad7247	/favicon.ico	GET
 20240215	10:30:31	a1a80e9e-8bea-4b8e-b22e-9c97e2c7368e	/new-page.html	GET
+20240215	13:25:28	51ad344c-73e3-4072-8584-4ab3f266531d	GET	undefined	/index
+20240215	14:27:09	ab012016-8731-4b2b-82d6-79f68bb0f42e	GET	undefined	/index
+20240215	14:36:37	dc9ad551-651c-419e-9a77-2d39f1bb3435	GET	undefined	/index
+20240215	14:37:05	907116f2-8cac-4c7d-bbff-ac2791711358	GET	undefined	/
+20240215	14:37:06	ec7c2b38-148b-491d-beb7-46f8837209bc	GET	undefined	/favicon.ico
+20240215	14:39:14	98374606-7eee-4f95-b693-00ce497317da	OPTIONS	https://www.google.co.in	/
+20240215	14:39:14	029789cf-0403-494d-9196-572fde26fc13	GET	https://www.google.co.in	/
+20240215	14:39:59	5a03dc53-edf3-447b-bf01-f30ce13fc0db	OPTIONS	https://www.google.co.in	/
+20240215	14:39:59	63f1e63b-cbf1-4646-b334-a1cc69eb52de	GET	https://www.google.co.in	/
+20240215	14:48:56	fb21c8cf-0d64-45c9-9462-49b52921798b	OPTIONS	https://www.google.co.in	/
+20240215	14:48:56	51653e83-da02-4b09-8119-a37f99aa1567	GET	https://www.google.co.in	/
+20240215	14:49:28	ec8b27c2-7426-4e74-932a-7c83a77e586b	OPTIONS	https://www.google.co.in	/
+20240215	14:49:28	1c4ca0d9-b074-4da3-8ade-9785de9b5ad5	GET	https://www.google.co.in	/
+20240215	14:54:40	0e685f72-e334-4736-8998-5710c9800b5a	OPTIONS	https://www.google.co.in	/
+20240215	14:54:40	5e8b943d-c008-4cd6-b75e-72856b0c6ad0	GET	https://www.google.co.in	/
+20240215	14:55:59	8b672126-baed-4e86-a1a0-ea94709b8964	OPTIONS	https://www.google.co.in	/
+20240215	14:55:59	f94d7a48-89cd-4e51-b203-fa0f5bb07b57	GET	https://www.google.co.in	/
+20240215	15:11:09	273522e1-2a92-46ed-a44f-75cd32b89f65	GET	undefined	/index
+20240215	15:12:44	bd7d475c-2426-456d-83e3-c12ed1e3a5de	GET	undefined	/index
+20240215	15:12:45	5943bd32-3ede-48dd-af71-0c4fe751d40c	GET	undefined	/index
+20240215	15:12:45	a3397385-1956-4a3f-8feb-e28610830aa8	GET	undefined	/index
+20240215	15:12:45	5238e3b2-5eab-4d15-b409-f1da0c3c2207	GET	undefined	/index
+20240215	15:12:46	2593dbca-15ff-4ec5-8b81-b8aa1c15ca8b	GET	undefined	/index
+20240215	15:12:46	20a51a9c-b85b-46da-84c6-7609e5690952	GET	undefined	/index
+20240215	15:12:46	b633e320-8e7e-4f8e-90c6-107bdb9b8eac	GET	undefined	/index
+20240215	15:12:46	f2c2b1e7-48a7-49d5-9add-8782c82d8ee6	GET	undefined	/index
+20240215	15:14:21	767389fb-5482-40bd-a78a-3cbf5a61712a	GET	undefined	/index/dev
+20240215	15:14:21	17c7a8e1-1d5f-4a9d-97ba-8d6381817e74	GET	undefined	/css/style.css
+20240215	15:19:16	7e437476-fe88-442b-aad9-a7c8e45ad7df	GET	undefined	/index/dev
+20240215	15:19:16	8be944ac-0c5b-42a7-b62a-b485a72a814b	GET	undefined	/css/style.css
+20240215	15:19:17	595c5a91-6ced-4783-82d9-ea54c676a85d	GET	undefined	/index/dev
+20240215	15:19:17	10b4dffc-65a9-483a-9dca-438940fd0e1d	GET	undefined	/css/style.css
