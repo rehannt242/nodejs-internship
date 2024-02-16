@@ -63,3 +63,11 @@
 20240216	11:56:57	258a381b-0e64-49e7-a7c5-9f89805eaabf	GET	undefined	/employees/1
 20240216	11:57:10	e7ebff72-8897-45ee-a210-08360ef9bb56	GET	undefined	/employees/1
 20240216	11:57:24	226b04f8-4938-429c-8ae9-1510ec9ce376	GET	undefined	/employees
+20240216	12:29:55	810d7ae1-3105-4baa-8dfe-36f7e1679afa	POST	undefined	/register
+20240216	12:30:11	0dece812-7d0c-402e-814c-0943dd6b9662	POST	undefined	/register
+20240216	12:30:37	3f584361-bae9-4fd5-aaaf-e52e950f9ae8	POST	undefined	/register
+20240216	12:30:50	7d82651f-4cbb-4d59-9d09-5d4cdae7a332	POST	undefined	/register
+20240216	14:47:18	47a696ec-d5be-4e66-aad7-d585ce8a86b6	POST	undefined	/register
+20240216	14:51:02	bca2921d-2b21-45a1-95d8-a215d4b88c36	POST	undefined	/register
+20240216	15:05:00	114ba130-8e4c-4b16-be4d-fa2354b8af67	POST	undefined	/auth
+20240216	15:05:26	8d2a84c3-3baa-45c4-9b47-f4c69dd57cef	POST	undefined	/auth
