@@ -1,53 +1,56 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const cors=require('cors');
-const corsOptions=require('./config/corsOptions');
-const {logger}=require('./middleware/logEvents');
-const errorHandler=require('./middleware/errorHandler');
-const PORT= process.env.PORT || 3500;
+const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
+const { logger } = require('./middleware/logEvents');
+const errorHandler = require('./middleware/errorHandler');
+const verifyJWT = require('./middleware/verifyJWT');
+const cookieParser = require('cookie-parser');
+const PORT = process.env.PORT || 3500;
 
-//custom middleware logger
+// Custom middleware logger
 app.use(logger);
-//corss orgin resourse sharing
 
-    app.use(cors());
-//built-in middleware to handle urlencoded data
-//in other words form data
-//'contenttype:application/x-www-form-urlencoded
+app.use(credentials);
 
-app.use(express.urlencoded({extended:false}));
+// CORS (Cross-Origin Resource Sharing)
+app.use(cors(corsOptions));
 
+// Built-in middleware to handle urlencoded data
+app.use(express.urlencoded({ extended: false }));
 
-//built-in middleware for json
+// Built-in middleware for json
 app.use(express.json());
 
-//serve static files
-app.use('/',express.static(path.join(__dirname,'/public')));
-//route
-app.use('/',require('./routes/root'));
-app.use('/register',require('./routes/api/register'));
-app.use('/auth',require('./routes/api/auth'));
-app.use('/employees',require('./routes/api/employees'));
+// Middleware for cookie
+app.use(cookieParser());
 
+// Serve static files
+app.use('/', express.static(path.join(__dirname, '/public')));
 
-app.all('*',(req,res)=>{
+// Routes
+app.use('/', require('./routes/root'));
+app.use('/register', require('./routes/api/register'));
+app.use('/auth', require('./routes/api/auth'));
+app.use('/refresh', require('./routes/api/refresh')); // Corrected typo here
+app.use(verifyJWT);
+app.use('/employees', require('./routes/api/employees')); // Corrected the route path
+app.use('/logout', require('./routes/logout'));
+// 404 Handler
+app.all('*', (req, res) => {
     res.status(404);
-    if(req.accepts('html')){
-
-        res.sendFile(path.join(__dirname,'views','404.html'));
-    }
-    else if(req.accepts('html')){
-
-        res.json({error:"404 Not Found"});
-    }
-    else{
+    if (req.accepts('html')) {
+        res.sendFile(path.join(__dirname, 'views', '404.html'));
+    } else if (req.accepts('json')) {
+        res.json({ error: "404 Not Found" });
+    } else {
         res.type('txt').send("404 Not Found");
     }
-    
-})
+});
 
-app.use(errorHandler)
+// Error handler middleware
+app.use(errorHandler());
 
-
-app.listen(PORT,()=>console.log(`server running on port ${PORT}`));
+// Start server
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
