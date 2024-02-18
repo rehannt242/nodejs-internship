@@ -8,6 +8,7 @@ const errorHandler = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 3500;
+const credentials = require('./middleware/credentials');
 
 // Custom middleware logger
 app.use(logger);
@@ -50,7 +51,7 @@ app.all('*', (req, res) => {
 });
 
 // Error handler middleware
-app.use(errorHandler());
+app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
